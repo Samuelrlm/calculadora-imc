@@ -7,7 +7,11 @@ export default function InputComponent({icone, valorFinal, handle, label}){
                 {icone}
             </div>
             <div className="w-[80%] h-full">
-                <input type="text" className="w-full outline-none text-black h-full border-none" />
+                <input
+                    onChange={handle}
+                    type="text"
+                    className="w-full outline-none text-black h-full border-none"
+                />
             </div>
             <div className="w-[10%] text-black h-full flex items-center justify-center">
                 {valorFinal}
